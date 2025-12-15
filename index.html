@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="nav-logo">J</a>
+        <ul class="nav-menu">
+          <li><a href="#experiencias">Experiências</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-avatar">
+          <img src="Me.png" alt="Avatar" />
+        </div>
+        <h1 class="hero-title">Julga um livro pela capa...</h1>
+        <h2 class="hero-subtitle">Ciências da Computação</h2>
+        <p class="hero-description">
+          Desenvolvedor de software. Crio produtos digitais significativos e
+          experiências de usuário intuitivas, focadas em resultados, performance
+          e exceções do negócio.
+        </p>
+      </section>
+
+      <section id="experiencias" class="experiencias">
+        <h2 class="section-title">Experiências</h2>
+        <div class="tech-grid">
+          <div
+            class="tech-card"
+            role="button"
+            tabindex="0"
+            aria-label="Abrir relatório HTML"
+          >
+            <i class="fab fa-html5"></i>
+            <span>HTML</span>
+          </div>
+          <div
+            class="tech-card"
+            role="button"
+            tabindex="0"
+            aria-label="Abrir relatório PYTHON"
+          >
+            <i class="fab fa-python"></i>
+            <span>PYTHON</span>
+          </div>
+          <div
+            class="tech-card"
+            role="button"
+            tabindex="0"
+            aria-label="Abrir relatório CSS"
+          >
+            <i class="fab fa-css3-alt"></i>
+            <span>CSS</span>
+          </div>
+          <div
+            class="tech-card"
+            role="button"
+            tabindex="0"
+            aria-label="Abrir relatório JAVASCRIPT"
+          >
+            <i class="fab fa-js-square"></i>
+            <span>JAVASCRIPT</span>
+          </div>
+        </div>
+        <p class="experiencias-info">
+          Atualmente, estou buscando aprofundar nas mais sólidas skills<br />
+          como desenvolvedor de software.
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-figma"></i></a>
+          <a href="#"><i class="fas fa-database"></i></a>
+          <a href="#"><i class="fab fa-react"></i></a>
+          <a href="#"><i class="fab fa-git-alt"></i></a>
+        </div>
+      </section>
+
+      <section class="central-logo-section">
+        <div class="logo-container">
+          <div class="logo-letra">J</div>
+        </div>
+      </section>
+
+      <section id="projetos" class="projetos">
+        <h2 class="section-title">PROJETOS</h2>
+
+        <!-- Projeto: Carro -->
+        <a
+          class="projeto-card"
+          href="index4.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="projeto-imagem">
+            <img src="assets/preview_carro.svg" alt="Preview Carro" />
+          </div>
+          <div class="projeto-texto">
+            <h3>Carro</h3>
+            <p>Aplicação do projeto "carro". Clique para abrir em nova aba.</p>
+          </div>
+        </a>
+
+        <!-- Projeto: Atividade 2 -->
+        <a
+          class="projeto-card reverse"
+          href="index2.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="projeto-imagem">
+            <img
+              src="assets/preview_atividade2.svg"
+              alt="Preview Atividade 2"
+            />
+          </div>
+          <div class="projeto-texto">
+            <h3>Atividade 2</h3>
+            <p>
+              Projeto da atividade 2 — abre em nova aba para mostrar o
+              funcionamento.
+            </p>
+          </div>
+        </a>
+
+        <!-- Projeto: Lâmpada -->
+        <a
+          class="projeto-card"
+          href="index3.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="projeto-imagem">
+            <img src="assets/preview_lampada.svg" alt="Preview Lâmpada" />
+          </div>
+          <div class="projeto-texto">
+            <h3>Lâmpada</h3>
+            <p>Projeto da lâmpada — clique para abrir e testar.</p>
+          </div>
+        </a>
+      </section>
+    </main>
+
+    <footer id="contato" class="contato">
+      <h2 class="section-title">Contato</h2>
+      <div class="contato-links">
+        <a
+          href="https://www.instagram.com/jarlisson_079?igsh=Zm1jNGdqaXI4ZHBl&utm_source=qr"
+          target="_blank"
+        >
+          <i class="fab fa-instagram"></i>
+          <span>@jarlisson_079</span>
+        </a>
+        <a href="mailto:britojarlisson64@gmail.com">
+          <i class="fas fa-envelope"></i>
+          <span>britojarlisson64@gmail.com</span>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/jarlisson-brito-602909368"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin"></i>
+          <span>Jarlisson brito</span>
+        </a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Modal de relatório das linguagens -->
+    <div id="tech-modal" class="tech-modal" aria-hidden="true">
+      <div class="tech-modal-overlay" data-close></div>
+      <div
+        class="tech-modal-window"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="tech-modal-title"
+      >
+        <button class="tech-modal-close" aria-label="Fechar">×</button>
+        <div class="tech-modal-content">
+          <h2 id="tech-modal-title"></h2>
+          <div id="tech-modal-body"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
